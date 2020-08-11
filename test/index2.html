@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator テスト2</title>
+  <script type="text/javascript" src="/src/password-generator.js"></script>
+  <script type="text/javascript" src="/src/password.js"></script>
+</head>
+<body>
+  <div>
+    <label for="password1">password1</label>
+    <input type="text" id="password1" name="password1" class="password1">
+    <button class="generator" data-password-target="password1">生成1</button>
+  </div>
+  <div>
+    <label for="password2">password2</label>
+    <input type="text" id="password2" name="password2" class="password2">
+    <button class="generator" data-password-target="password2">生成2</button>
+  </div>
+  <div>
+    <label for="password3">password3</label>
+    <input type="text" id="password3" name="password3" class="password3">
+    <button class="generator" data-password-target="password3">生成3</button>
+  </div>
+
+  <script>
+    new Password('generator');
+  </script>
+</body>
+</html>

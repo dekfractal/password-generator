@@ -1,0 +1,16 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator テスト</title>
+  <script type="text/javascript" src="/src/password-generator.js"></script>
+</head>
+<body>
+  <script>
+    let pg = new PasswordGenerator();
+    let password_8 = pg.password(8);
+    let password_16 = pg.password(16);
+    console.log(password_8);
+    console.log(password_16);
+  </script>
+</body>
+</html>
